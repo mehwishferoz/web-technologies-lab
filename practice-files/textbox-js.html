@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box Example</title>
+</head>
+<body>
+    <p>
+        "Give a number: "
+        <input type="text" id="inputBox">
+    </p>
+    <button onclick="getUserInput()">Submit</button>
+    <script>
+        function getUserInput() {
+            let userInput= document.getElementById("inputBox").value;
+            alert("User Input: " + userInput);
+        }
+    </script>
+</body>
+</html>

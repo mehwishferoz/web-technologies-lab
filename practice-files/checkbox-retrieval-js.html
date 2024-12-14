@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Retrieval</title>
+    <script>
+        function func1()
+        {
+            if((Yes.checked & No.checked))
+                document.write("Error");
+            else if(Yes.checked)
+                document.write(Yes.value);
+            else
+                document.write(No.value);
+        }
+    </script>
+</head>
+<body>
+    Are you a Web Developer?
+    <br>
+    <input type="checkbox" id="Yes" value="I am a programmer">
+    YES
+    <br>
+    <input type="checkbox" id="No" value="I am not a programmer">
+    NO
+    <br>
+    <button onclick="func1()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,44 @@
+h1{
+	background-color: green;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}	
+
+form{
+	text-align: center-left;
+	font-size: 20px;
+}
+
+fieldset{
+	text-align: center;
+	color: green;
+}
+
+#div1{
+	width: 60%;
+}
+
+table{
+	height: 500px;
+	width: 100%;
+}
+
+#div1{
+	background-color: lavender;
+	border-color: purple;
+}
+
+input{
+	height: 30px;
+	width: 90%;
+}
+
+button{
+	background-color: green;
+	color: white;
+	width: 80px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 8px;
+}

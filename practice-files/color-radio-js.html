@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color color radio</title>
+</head>
+    <label for="purple">purple</label>
+    <input type="radio" name="color" id="purple" value="mediumpurple">
+    <label for="green">green</label>
+    <input type="radio" name="color" id="green" value="lightgreen">
+    <label for="blue">blue</label>
+    <input type="radio" name="color" id="blue" value="lightblue">
+<script>
+        var buttons = document.getElementsByName('color');
+        function setColor(event){
+            document.body.style.backgroundColor = event.target.value;
+        }
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("change", setColor);            
+        }
+</script>
+</center>
+</html>

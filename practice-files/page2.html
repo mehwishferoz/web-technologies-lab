@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Submitted Details</title>
+</head>
+
+<body>
+	<script>
+		var params = new URLSearchParams(window.location.search);
+		var uid = params.get("uid");
+		document.getElementById("display").innerHTML = "UID: " + uid;
+	</script>
+	
+	<div id="display"></div>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>Data Display Page</h1>
+    <p>User ID: <span id="display_uid"></span></p>
+
+    <script>
+        // JavaScript code for displaying data
+        var params = new URLSearchParams(window.location.search);
+		var uid = params.get("uid");
+
+
+        document.getElementById("display_uid").textContent = uid;
+    </script>
+</body>
+</html>
